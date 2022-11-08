@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$main-background: hsl(217, 54%, 11%);
+$card-background: hsl(216, 50%, 16%);
+$bottom-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+$blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$font-face: 'Outfit', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $main-background;
+  color: $white;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+}
+
+img {
+  max-width: 100%;
+}
+
+// container
+#nft-card {
+  background: $card-background;
+  padding: 1.5rem;
+  max-width: 400px;
+  height: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+
+  .nft-image{
+    position: relative;
+
+    div{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: hsl(178, 100%, 50%, 50%);
+      height: calc(100% - 3px);
+      width: 100%;
+      z-index: 9;
+      opacity: 0;
+      transition: opacity 0.4s ease-in-out;
+
+      &:hover{
+        opacity: 1;
+        cursor: pointer;
+      }
+      img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+
+  .nft-title {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    &:hover {
+      color: $Cyan;
+      cursor: pointer;
+    }
+  }
+
+  .nft-description {
+    font-size: 18px;
+    line-height: 1.4;
+    color: $blue;
+    font-weight: 400;
+  }
+
+  .price-days {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.7rem 0;
+    border-bottom: 1px solid $bottom-line;
+
+    .price {
+      display: flex;
+
+      p {
+        margin-left: 7px;
+        color: $Cyan;
+        font-weight: 400;
+      }
+    }
+
+    .days {
+      display: flex;
+
+      p {
+        margin-left: 4px;
+        color: $blue;
+      }
+    }
+  }
+
+  .nft-creator {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid $white;
+    }
+
+    p {
+      margin-left: 1rem;
+      color: $blue;
+    }
+
+    span {
+      color: $white;
+
+      &:hover {
+        color: $Cyan;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
+
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@import 'mobile';

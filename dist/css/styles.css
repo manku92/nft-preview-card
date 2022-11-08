@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217deg, 54%, 11%);
+  color: hsl(0deg, 0%, 100%);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(215deg, 51%, 70%);
+}
+
+img {
+  max-width: 100%;
+}
+
+#nft-card {
+  background: hsl(216deg, 50%, 16%);
+  padding: 1.5rem;
+  max-width: 400px;
+  height: 100%;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+#nft-card .nft-image {
+  position: relative;
+}
+#nft-card .nft-image div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: hsla(178deg, 100%, 50%, 0.5);
+  height: calc(100% - 3px);
+  width: 100%;
+  z-index: 9;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+#nft-card .nft-image div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#nft-card .nft-image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#nft-card .nft-title {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+#nft-card .nft-title:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+#nft-card .nft-description {
+  font-size: 18px;
+  line-height: 1.4;
+  color: hsl(215deg, 51%, 70%);
+  font-weight: 400;
+}
+#nft-card .price-days {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid hsl(215deg, 32%, 27%);
+}
+#nft-card .price-days .price {
+  display: flex;
+}
+#nft-card .price-days .price p {
+  margin-left: 7px;
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 400;
+}
+#nft-card .price-days .days {
+  display: flex;
+}
+#nft-card .price-days .days p {
+  margin-left: 4px;
+  color: hsl(215deg, 51%, 70%);
+}
+#nft-card .nft-creator {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+#nft-card .nft-creator img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+#nft-card .nft-creator p {
+  margin-left: 1rem;
+  color: hsl(215deg, 51%, 70%);
+}
+#nft-card .nft-creator span {
+  color: hsl(0deg, 0%, 100%);
+}
+#nft-card .nft-creator span:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  #nft-card {
+    max-width: 340px;
+  }
+  #nft-card .nft-title {
+    font-size: 1.2rem;
+  }
+  #nft-card .nft-description {
+    font-size: 1rem;
+  }
+  .attribution {
+    font-size: 14px;
+    margin-bottom: 7px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
