@@ -1,14 +1,15 @@
-# Table of contents
+# Frontend Mentor - NFT preview card component solution
+
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Links](#links)
+- [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -19,31 +20,25 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
+### Links
+
+- Solution URL: [Github](https://github.com/manku92/nft-preview-card.git)
+- Live Site URL: [Netlifty](https://helpful-caramel-0d841e.netlify.app/)
+
+## My process
+
 ### Built with
 
 - Semantic HTML5 markup
-- CSS pre-processor SASS
+- CSS custom properties
 - Flexbox
-- desk-first workflow
+
 
 ### What I learned
 
-I enjoyed this challenge alot. From how to structure the page to styling. Came across a difficult section which was the hovering of the image, took a couple of tries but came out unsuccessful. But was able to overcome that part with the help of some research. It did take a while but happy with how it came out. 
+So after completing a few challenges, i returned to this challenge and re-did the whole the thing. To my surprise it turned out really well.
 
-### Continued development
-
-I`d like to focus more on the CSS, given that this challenge was in HTML and CSS. Still need to wrap my head around with positions.
-
-### Useful resources
-
-- [hovering image overlay](https://www.youtube.com/watch?v=9bGbykdR4T8&t=1578s) - Watching this helped with the image hover.
 
 ## Author
 
-- Frontend Mentor - [@manku92](https://www.frontendmentor.io/profile/yourusername)
-
-## Acknowledgments
-
-Big thanks to the video tutorial above that helped in the section where i found the most difficult in.
-
-
+- Frontend Mentor - [@manku92](https://www.frontendmentor.io/profile/manku92)
